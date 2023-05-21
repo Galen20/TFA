@@ -1,0 +1,8 @@
+@import 'utils/variables';
+@import 'components/type';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

@@ -80,11 +80,14 @@ body{
 
       img{ 
         max-width: 100%;
+       
     }
+   
     .img-tel{
         max-width: 45%;
         
     }
+   
     .img-ph02{
       max-width: 53%;
       
@@ -94,7 +97,7 @@ body{
         font-size: 10px;
         margin-top: 10px;
       }
-
+      
     .gridv {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -245,6 +248,9 @@ footer .extra li a:hover{
   width: 50px;
   height: 30px;
 }
+
+
+
 
 
   @media (min-width:992px){

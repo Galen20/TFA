@@ -292,6 +292,30 @@ figcaption {
     bottom: 700px;
   }
 }
+@media (min-width: 1600px) {
+  .dgrid-startdalto {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+  }
+  .dgrid-startdalto02 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+    grid-row-start: 2;
+  }
+  .dgrid-startdalto03 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    display: flex;
+    grid-row-start: 3;
+  }
+  .dgrid-startdalto04 {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    display: flex;
+  }
+}
 @media (min-width: 2000px) {
   .text-container {
     bottom: 800px;

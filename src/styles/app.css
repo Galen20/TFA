@@ -131,6 +131,11 @@ figcaption {
 }
 .grid.grid--bg {
   background-color: #2E3441;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.grid.grid--bg.grid--bg h2 {
+  color: white;
 }
 
 .grid > * {
@@ -202,22 +207,26 @@ figcaption {
     margin: 0 auto;
     margin-top: 100px;
   }
+  .grid.grid--bg {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .grid > * {
     grid-column: 1/-1;
   }
   .dgrid-startdalto {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     display: flex;
   }
   .dgrid-startdalto02 {
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 7;
     display: flex;
     grid-row-start: 2;
   }
   .dgrid-startdalto03 {
-    grid-column-start: 4;
+    grid-column-start: 5;
     grid-column-end: 7;
     display: flex;
     grid-row-start: 3;
@@ -226,6 +235,29 @@ figcaption {
     grid-column-start: 2;
     grid-column-end: 6;
     display: flex;
+  }
+  .dgrid-startint {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: flex;
+  }
+  .dgrid-startint02 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    display: flex;
+    grid-row-start: 3;
+  }
+  .dgrid-startint03 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    display: flex;
+    grid-row-start: 4;
+  }
+  .dgrid-startint04 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    grid-row-start: 3;
   }
   .text-container {
     bottom: 600px;

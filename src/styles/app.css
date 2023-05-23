@@ -423,6 +423,14 @@ a:hover {
   display: inline-block;
 }
 
+.list {
+  font-size: 16px;
+}
+
+.ulist {
+  list-style: decimal;
+}
+
 @media all and (max-width: 991px) {
   .nav-links {
     position: fixed;
@@ -592,6 +600,16 @@ a:hover {
     grid-column-end: 8;
     grid-row-start: 3;
   }
+  .dgrid-startinter02 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 2;
+  }
+  .dgrid-startinter03 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 4;
+  }
   .text-container {
     bottom: 600px;
   }
@@ -676,6 +694,16 @@ a:hover {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 1;
+  }
+  .dgrid-startinter02 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+  }
+  .dgrid-startinter03 {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 4;
   }
 }
 @media (min-width: 2000px) {

@@ -17,7 +17,9 @@ body{
     overflow-x: hidden;
 }
 
-
+.page{
+  font-size: 20px;
+}
 
 .headv {
     width: 100%;
@@ -56,6 +58,14 @@ body{
       margin: 0;
     }
     .lph2 {
+        font-family: "larken";  
+        font-weight:400;
+        font-size: 32px;
+        line-height: 1;
+        margin: 0;
+        color: #02C8FF;
+      }
+      .pgh2 {
         font-family: "larken";  
         font-weight:400;
         font-size: 28px;
@@ -191,6 +201,7 @@ body{
  }
   .next:hover:after {
     transform: translate(0.5em, -0.1em);
+    
  }
 
  footer{
@@ -204,8 +215,12 @@ body{
     align-items: center;
     flex-direction: column;
     margin-top: -50px;
+
 }
 
+.footer__small{
+  margin-top: 50px;
+}
 
 footer .media_logo, footer .extra, footer p{
     position: relative;
@@ -276,7 +291,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  min-height: 10vh;
   font-family: "larken";
   background: #2E3441;
 }
@@ -285,9 +300,7 @@ nav {
   position: absolute;
   transform: translate(-5%, -5%);
   background: #2E3441;
-  color: #fff;
   text-decoration: none;
-  /* letter-spacing: 1px;*/
   font-weight: 200;
   font-size: 16px;
   color: #ffffff;
@@ -575,6 +588,23 @@ a:hover {
       
       grid-row-start: 2;
   }
+  // extra cond for pages
+    .dgrid-startconcl01{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+    }
+    .dgrid-startintro03{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 3;
+    }
+    .dgrid-startintro04{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 3;
+
+    }
     .text-container {
         bottom: 600px;
         
@@ -584,6 +614,9 @@ a:hover {
     }
     .lph2{
         font-size: 70px;
+    }
+    .pgh2{
+      font-size: 50px;
     }
     .lpp{
         font-size: 20px;
@@ -608,6 +641,11 @@ a:hover {
     .imglp{
         width: 100%;
       }
+      .grid--page{
+        width: 90%;
+        margin-top: 200px;
+        margin-bottom: 200px;
+      }
   }
   @media (min-width: 1400px) {
     .nav-links {
@@ -621,12 +659,10 @@ a:hover {
   }
   @media (min-width:1500px){
     .text-container {
-        bottom: 700px;
-        
+        bottom: 700px;  
       }
-      
       .logo a {
-        font-size: 25px;
+        font-size: 30px;
       }
   }
   @media (min-width:1600px){
@@ -655,6 +691,11 @@ a:hover {
     .dgrid-starthypo01{
       grid-column-start: 3;
      ;
+  }
+  .dgrid-startconcl01{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
   }
   }
 

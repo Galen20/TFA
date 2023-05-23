@@ -292,6 +292,7 @@ footer p {
   text-decoration: none;
   font-family: "larken";
   font-size: 20px;
+  font-weight: 700;
 }
 
 nav {
@@ -315,6 +316,7 @@ nav {
   position: relative;
   display: flex;
   padding: 0 0 0 0;
+  list-style: none;
 }
 
 .nav-links .text {
@@ -326,6 +328,7 @@ nav {
   display: flex;
   padding: 5px 10px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-links .text::before, .nav-links .text::after {

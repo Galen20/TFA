@@ -18,7 +18,7 @@ body {
 body {
   font-family: "titillium-web";
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.4;
   color: white;
   background-color: #0E1014;
   margin: 0;
@@ -53,7 +53,7 @@ video {
   margin: 0 auto;
 }
 
-h1 {
+.lph1 {
   font-family: "larken";
   font-weight: 700;
   font-size: 56px;
@@ -61,7 +61,7 @@ h1 {
   margin: 0;
 }
 
-h2 {
+.lph2 {
   font-family: "larken";
   font-weight: 400;
   font-size: 28px;
@@ -76,9 +76,13 @@ h2 {
   margin: 20px 20px 40px 20px;
 }
 
-p {
+.lpp {
   font-size: 18px;
   line-height: 25px;
+}
+
+.para {
+  font-size: 20px;
 }
 
 .uppercase {
@@ -134,7 +138,7 @@ figcaption {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.grid.grid--bg.grid--bg h2 {
+.grid.grid--bg.grid--bg .lph2 {
   color: white;
 }
 
@@ -169,7 +173,7 @@ figcaption {
 
 .next:before {
   top: 50%;
-  right: 2em;
+  right: 2.5em;
   width: 1em;
   height: 1em;
   transform-origin: 50% 50%;
@@ -180,7 +184,7 @@ figcaption {
 
 .next:after {
   top: 50%;
-  right: 2em;
+  right: 2.5em;
   width: 2em;
   height: 0.2em;
   transform: translate(0, -0.1em);
@@ -254,11 +258,24 @@ footer p {
 .imgdwt {
   width: 50px;
   height: 30px;
+  fill: white;
 }
 
 @media (min-width: 992px) {
   img {
     max-width: 500px;
+  }
+  figure.img-cont {
+    width: 500px;
+    height: 320px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+  img:hover {
+    transform: scale(1.2);
   }
   .grid {
     display: grid;
@@ -277,107 +294,101 @@ footer p {
   }
   .dgrid-startdalto {
     grid-column-start: 2;
-    grid-column-end: 5;
-    display: flex;
+    grid-column-end: 6;
   }
   .dgrid-startdalto02 {
     grid-column-start: 5;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 2;
   }
   .dgrid-startdalto03 {
     grid-column-start: 5;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-startdalto04 {
     grid-column-start: 2;
     grid-column-end: 6;
-    display: flex;
   }
   .dgrid-startint {
     grid-column-start: 2;
     grid-column-end: 7;
-    display: flex;
   }
   .dgrid-startint02 {
     grid-column-start: 4;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-startint03 {
     grid-column-start: 4;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 4;
   }
   .dgrid-startint04 {
     grid-column-start: 2;
     grid-column-end: 4;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-starthypo01 {
-    grid-column-start: 5;
+    grid-column-start: 2;
     grid-column-end: 8;
-    display: flex;
     grid-row-start: 1;
   }
   .dgrid-starthypo02 {
     grid-column-start: 2;
     grid-column-end: 5;
-    display: flex;
     grid-row-start: 2;
   }
   .dgrid-starthypo03 {
     grid-column-start: 2;
     grid-column-end: 5;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-starthypo04 {
     grid-column-start: 5;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 4;
   }
   .dgrid-startconcl02 {
     grid-column-start: 2;
     grid-column-end: 5;
-    display: flex;
     grid-row-start: 2;
   }
   .dgrid-startconcl03 {
     grid-column-start: 2;
     grid-column-end: 7;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-startconcl04 {
     grid-column-start: 5;
     grid-column-end: 8;
-    display: flex;
+    grid-row-start: 2;
+  }
+  .dgrid-startmod02 {
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start: 2;
   }
   .text-container {
     bottom: 600px;
   }
-  h1 {
+  .lph1 {
     font-size: 93px;
   }
-  h2 {
+  .lph2 {
     font-size: 70px;
   }
-  p {
+  .lpp {
     font-size: 20px;
     line-height: 28px;
   }
   .paragrande {
     font-size: 56px;
     line-height: 78px;
+  }
+  .para {
+    font-size: 31px;
+    line-height: 1.4;
   }
   figcaption {
     font-size: 15px;
@@ -398,25 +409,24 @@ footer p {
 @media (min-width: 1600px) {
   .dgrid-startdalto {
     grid-column-start: 2;
-    grid-column-end: 4;
-    display: flex;
+    grid-column-end: 5;
   }
   .dgrid-startdalto02 {
     grid-column-start: 4;
     grid-column-end: 6;
-    display: flex;
     grid-row-start: 2;
   }
   .dgrid-startdalto03 {
     grid-column-start: 4;
     grid-column-end: 6;
-    display: flex;
     grid-row-start: 3;
   }
   .dgrid-startdalto04 {
     grid-column-start: 2;
     grid-column-end: 6;
-    display: flex;
+  }
+  .dgrid-starthypo01 {
+    grid-column-start: 3;
   }
 }
 @media (min-width: 2000px) {

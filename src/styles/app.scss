@@ -468,10 +468,11 @@ a:hover {
     img{ 
         max-width: 500px;
     }
-    figure.img-cont {
+    figure .img-cont {
       width: 500px;
       height:320px;
       overflow: hidden;
+      
     }
     
     img {

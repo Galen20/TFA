@@ -1,15 +1,13 @@
 'use strict';
 
-console.info('Hello world');
-
-
 const navSlide = () => {
     const burgerm = document.querySelector('.burgerm');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
     const body = document.querySelector(".body");
   
-    burgerm.addEventListener('click', () => {
+    if (burgerm) {
+      burgerm.addEventListener('click', () => {
      
       nav.classList.toggle('nav-active');
       body.classList.toggle('scroll');
@@ -24,6 +22,8 @@ const navSlide = () => {
       
       burgerm.classList.toggle('toggle')
     });
+    }
+    
   };
   
   const app = () => {

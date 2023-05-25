@@ -135,7 +135,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 25px;
-    row-gap: 30px;
+    row-gap: 40px;
     padding-left: 25px;
     padding-right: 25px;
     margin-bottom: 40px;
@@ -415,6 +415,10 @@ a:hover {
 }
 .ulist{
   list-style: decimal;
+  padding: 0px;
+}
+.ulist li {
+    margin: 30px;
 }
 
 @media all and (max-width: 991px) {
@@ -468,10 +472,18 @@ a:hover {
     img{ 
         max-width: 500px;
     }
-    figure.img-cont {
+    figure .img-cont {
       width: 500px;
       height:320px;
       overflow: hidden;
+      cursor: pointer;
+      
+      &.img-cont--hless{
+        height: 280px;
+      }
+      &.img-cont--hlesser{
+        height: 250px;
+      }
     }
     
     img {
@@ -666,6 +678,7 @@ a:hover {
         margin-top: 200px;
         margin-bottom: 200px;
       }
+     
   }
   @media (min-width: 1400px) {
     .nav-links {
@@ -724,7 +737,7 @@ a:hover {
   }
   .dgrid-startinter03{
     grid-column-start: 4;
-    grid-column-end: 6;
+    grid-column-end: 7;
     grid-row-start: 4;
   }
   }

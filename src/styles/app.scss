@@ -515,6 +515,46 @@ a:hover {
         background-image: url("image/colorwsf.png") ;
     }
   }
+
+  //to be continued scroll 
+  .cycle{
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    margin-top: 300px;
+  }
+  .innercycle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: radial-gradient(circle, rgba(14, 16, 20, 0) 0%, rgb(14, 16, 20) 100%);
+  }
+
+
+.animation-text-scroll {
+    animation: text-scroll 600s linear infinite;
+    display: inline-block;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 140px;
+    color: transparent; -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+
+
+@keyframes text-scroll{
+  
+0% {
+    transform: translate(0);
+}
+100% {
+    transform: translate(-100%);
+}
+}
 }
 @media all and (max-width: 991px) {
   .nav-links {
@@ -839,6 +879,26 @@ a:hover {
       grid-column-start: 2;
       grid-column-end: 5;
       grid-row-start: 1;
+    }
+    .dgrid-startadn02{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 2;
+    }
+    .dgrid-startadn03{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 3;
+    }
+    .dgrid-startadn04{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 4;
+    }
+    .dgrid-startadn05{
+      grid-column-start: 1;
+      grid-column-end: 8;
+      grid-row-start: 5;
     }
     .text-container {
         bottom: 600px;

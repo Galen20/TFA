@@ -38,3 +38,4 @@ const themeTrigger = document.querySelector(".js-theme-trigger");
 if(themeTrigger){
     themeTrigger.addEventListener("click", toggleTheme) ;
 }
+

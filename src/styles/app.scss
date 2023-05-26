@@ -52,10 +52,11 @@ body{
   
     .lph1{
       font-family: "larken";  
-      font-weight:700;
+      font-weight:900;
       font-size: 56px;
       line-height: 1;
       margin: 0;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     .lph2 {
         font-family: "larken";  
@@ -79,6 +80,7 @@ body{
       font-size: 26px;
       line-height: 36px;
       margin: 20px 20px 40px 20px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .lpp{
@@ -283,7 +285,8 @@ footer .extra li a:hover{
   text-decoration: none;
   font-family: "larken";
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 900;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -429,6 +432,89 @@ a:hover {
     margin: 30px;
 }
 
+//swiper
+
+//changekeyframeimg
+
+.sliderImg{
+  width: 100%;
+  height: 600px;
+  background-image: url('image/karminetel.png');
+  background-size: 100% 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  animation: changeImage 25s linear infinite;
+}
+
+@keyframes changeImage{
+  0%{
+      background-image: url("image/karminetel.png") ;
+  }
+  15%{
+      background-image: url("image/karminetel.png") ;
+  }
+  25%{
+      background-image: url("image/titilliumwebtel.png") ;
+  }
+  35%{
+      background-image: url("image/titilliumwebtel.png") ;
+  }
+  50%{
+      background-image: url("image/colorblindtel.png") ;
+  }
+  65%{
+      background-image: url("image/colorblindtel.png") ;
+  }
+  75%{
+      background-image: url("image/larkentel.png") ;
+  }
+  85%{
+      background-image: url("image/larkentel.png") ;
+  }
+  95%{
+      background-image: url("image/colorwsftel.png") ;
+  }
+  100%{
+      background-image: url("image/colorwsftel.png") ;
+  }
+}
+@media (min-width: 720px){
+  .sliderImg{
+    background-image: url('image/karmine.png');
+  
+  }
+  @keyframes changeImage{
+    0%{
+        background-image: url("image/karmine.png") ;
+    }
+    15%{
+        background-image: url("image/karmine.png") ;
+    }
+    25%{
+        background-image: url("image/titilliumweb.png") ;
+    }
+    35%{
+        background-image: url("image/titilliumweb.png") ;
+    }
+    50%{
+        background-image: url("image/colorblind.png") ;
+    }
+    65%{
+        background-image: url("image/colorblind.png") ;
+    }
+    75%{
+        background-image: url("image/larken.png") ;
+    }
+    85%{
+        background-image: url("image/larken.png") ;
+    }
+    90%{
+        background-image: url("image/colorwsf.png") ;
+    }
+    100%{
+        background-image: url("image/colorwsf.png") ;
+    }
+  }
+}
 @media all and (max-width: 991px) {
   .nav-links {
     position: fixed;
@@ -440,7 +526,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
+    width: 100%;
     transform: translateX(100%);
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
     overflow: hidden;
@@ -718,6 +804,36 @@ a:hover {
       grid-column-end: 7;
       grid-row-start: 6;
     }
+    .dgrid-startsew01{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 1;
+    }
+    .dgrid-startsew02{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 2;
+    }
+    .dgrid-startsew03{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 3;
+    }
+    .dgrid-startsew04{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 4;
+    }
+    .dgrid-startsew05{
+      grid-column-start: 5;
+      grid-column-end: 8;
+      grid-row-start: 5;
+    }
+    .dgrid-startsew06{
+      grid-column-start: 1;
+      grid-column-end: 5;
+      grid-row-start: 6;
+    }
     .text-container {
         bottom: 600px;
         
@@ -759,11 +875,11 @@ a:hover {
         margin-top: 200px;
         margin-bottom: 200px;
 
-        &.--gap{
-          row-gap: 100px;
-        }   
+         
       }
-     
+      .grid--gap{
+        row-gap: 100px;
+      }  
   }
   @media ( min-width: 1200px){
     img{ 

@@ -283,6 +283,7 @@ footer .extra li a:hover{
 .logo a {
   color: rgb(226, 226, 226);
   text-decoration: none;
+  text-align: center;
   font-family: "larken";
   font-size: 20px;
   font-weight: 900;
@@ -834,6 +835,11 @@ a:hover {
       grid-column-end: 5;
       grid-row-start: 6;
     }
+    .dgrid-startadn01{
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 1;
+    }
     .text-container {
         bottom: 600px;
         
@@ -940,6 +946,11 @@ a:hover {
       .logo a {
         font-size: 30px;
       }
+      .dgrid-startmod01{
+        grid-column-start: 2;
+        grid-column-end: 7;
+        grid-row-start: 1;
+      }
       .dgrid-startmod02{
         grid-column-start: 2;
         grid-column-end: 6;
@@ -975,7 +986,7 @@ a:hover {
   }
   .dgrid-startconcl01{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row-start: 1;
   }
   .dgrid-startinter02{

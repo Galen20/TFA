@@ -524,6 +524,44 @@ a:hover {
     }
   }
 }
+//to be continued scroll 
+.cycle{
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin-top: 300px;
+}
+.innercycle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: radial-gradient(circle, rgba(14, 16, 20, 0) 0%, rgb(14, 16, 20) 100%);
+}
+
+
+.animation-text-scroll {
+  animation: text-scroll 600s linear infinite;
+  display: inline-block;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 140px;
+  color: transparent; -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+
+@keyframes text-scroll{
+  
+  0% {
+      transform: translate(0);
+  }
+  100% {
+      transform: translate(-100%);
+  }
+  }
+
 //changekeyframeimg
 
 .sliderImg{
@@ -605,45 +643,8 @@ a:hover {
     }
   }
 
-  //to be continued scroll 
-  .cycle{
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-    margin-top: 300px;
-  }
-  .innercycle{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    background: radial-gradient(circle, rgba(14, 16, 20, 0) 0%, rgb(14, 16, 20) 100%);
-  }
-
-
-.animation-text-scroll {
-    animation: text-scroll 600s linear infinite;
-    display: inline-block;
-    font-weight: 800;
-    text-transform: uppercase;
-    font-size: 140px;
-    color: transparent; -webkit-text-stroke: 1px rgb(255, 255, 255);
-}
-
-
-
-@keyframes text-scroll{
   
-0% {
-    transform: translate(0);
-}
-100% {
-    transform: translate(-100%);
-}
-}
+
 }
 @media all and (max-width: 991px) {
   .nav-links {

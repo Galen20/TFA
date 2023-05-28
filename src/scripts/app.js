@@ -39,6 +39,7 @@ if(themeTrigger){
     themeTrigger.addEventListener("click", toggleTheme) ;
 }
 
+
 if (document.querySelector(".swiper")){
   const swiper = new Swiper(".swiper", {
     slidesPerView: 4,
@@ -61,4 +62,31 @@ if (document.querySelector(".swiper")){
     },
    
   });
+}
+
+if (document.querySelector(".anim-first")){
+window.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const elements = [
+    ".anim-first",
+    ".anim-second",
+    ".anim-third",
+    ".anim-fourth",
+  ];
+
+  elements.forEach((element, index) => {
+    gsap.to(element, {
+      opacity: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: element,
+        start: "top 80%",
+        end: "bottom 50%",
+        toggleActions: "play none none reverse",
+      },
+      delay: index * 1,
+    });
+  });
+});
 }

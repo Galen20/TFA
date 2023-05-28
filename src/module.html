@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="https://use.typekit.net/fbe6vlg.css">
     <link rel="stylesheet" href="styles/app.css">
     <script src="scripts/app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 </head>
 <body class="body page">
     <header> 
@@ -56,7 +58,7 @@
 
     <main>
    
-        <section class="grid grid--page">
+        <section class="grid grid--page grid--gap">
             <h1 class="lph2 mgrid-start01 dgrid-startmod02">Module de développement sur mesure</h1>
             <p class="lpp mgrid-start01 dgrid-startconcl02"><span class="para">Pour ce projet,</span> j'ai décidé de travailler avec des personnes daltoniennes,leur point de vue m’intéressait beaucoup et j'ai pensé que ce serait pertinent de trouver une hypothèse pour les aider dans leur vie quotidienne. Cependant, la tâche la plus difficile a été de trouver une association et de ne pas immédiatement penser à une solution. J'ai donc commencé à chercher des groupes en ligne et j'ai pu trouver deux groupes Facebook avec lesquels j'ai commencé à mener des interviews après avoir fait mon guide d’entretien.</p>
             <p class="lpp mgrid-start01 dgrid-startintro03">En ce qui concerne les questions à poser, il était crucial d'être précis afin d'éviter des réponses courtes ou fermées et d'avoir suffisamment de munitions pour extraire un maximum d'informations possibles.</p>
@@ -66,8 +68,31 @@
                 </div>
                 <figcaption class="dgrid-startlien">Couleur dans l'oeil pris sur unsplash</figcaption>
             </figure>        
-            <img class="mgrid-start01 dgrid-startintro04 imglp"  src="assets/images/appideachat.png" alt="Pixel art sur Miro de notre équipe">
-                
+           
+            <div class="mgrid-start01 dgrid-startgsap04 imglp boxchat">
+                <div class="boxaccount">
+                  <ion-icon class="imgicon imgicon--move" name="chevron-back-outline"></ion-icon>
+                  <img class="imgavatar no-scale" src="assets/images/sylvain.jpg">
+                  <p class="psylv">Sylvain Devaux</p>
+                </div>
+                <div class="firstmsg">
+                  <img class="imgavatar anim-first no-scale" src="assets/images/sylvain.jpg">
+                  <div class="message1 anim-second">
+                    <p class="pmod">Pourriez-vous vérifier si la couleur est correcte, s'il vous plaît parce que je vois du rouge ? Merci. 😄</p>
+                    <img class="no-scale" src="assets/images/clothes.jpg">
+                  </div>
+                </div>
+                <div class="secondmsg">
+                  <img class="imgavatar anim-third no-scale" src="assets/images/Galen 4.jpg">
+                  <div class="message2 anim-fourth">
+                    <p class="pmod">Avec plaisir ! En revanche, ce n'est pas rouge, mais plutôt un vert cyan. Faites attention à cela !</p>
+                  </div>
+                </div>
+                <div class="messagesender">
+                  <p class="psylv">Envoyez un message</p>
+                  <ion-icon class="imgicon" name="mic-outline"></ion-icon>
+                </div>
+              </div>    
         </section> 
     
        

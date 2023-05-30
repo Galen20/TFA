@@ -65,7 +65,7 @@ if (document.querySelector(".swiper")){
 }
 
 if (document.querySelector(".anim-first")){
-  window.addEventListener("DOMContentLoaded", function () {
+    window.addEventListener("DOMContentLoaded", function () {
     gsap.registerPlugin(ScrollTrigger);
 
     const elements = [

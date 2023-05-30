@@ -15,7 +15,10 @@ body{
     background-color: #0E1014;
     margin: 0;
     overflow-x: hidden;
+    animation: pageOpen .4s ease-out backwards;
 }
+
+
 
 .page{
   font-size: 20px;
@@ -1173,6 +1176,66 @@ a:hover {
 
   }
   @media (min-width: 1400px) {
+
+    body:after{
+      content: "";
+      display: block;
+      position: absolute;
+      background: linear-gradient(180deg, #0E1014 0%, #1b498d 100%);
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      
+      transform: scale(0);
+      transform-origin: center center;
+  }
+  body:before{
+      content: "";
+      display: block;
+      position: absolute;
+      background: linear-gradient(180deg, rgba(26, 56, 117, 0.99) 0%, #0E1014 100%);
+      top: 0%;
+      left: 0%;
+      height: 100%;
+      width: 100%;
+      
+      transform: scale(0);
+      z-index: 10;
+      transform-origin: center center;
+  }
+  
+  @keyframes pageAnimation {
+      /* to{
+          transform: scale(1);
+      } */
+  
+      to{
+          transform: scaleY(50);
+      }
+  }
+  .page-animation:after{
+      animation: pageAnimation .6s cubic-bezier(0, 0.55, 0.45, 1) forwards;
+  }
+  .page-animation:before{
+      animation: pageAnimation .8s .2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  
+  nav{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  @keyframes pageOpen {
+      from{
+          opacity: 0;
+          transform: translateX(-20px);
+      }
+      to{
+          opacity: 1;
+          transform: translateX(0);
+      }
+  }
     .nav-links {
       padding: 0 0 0 0;
       font-size: 18px;

@@ -65,28 +65,46 @@ if (document.querySelector(".swiper")){
 }
 
 if (document.querySelector(".anim-first")){
-window.addEventListener("DOMContentLoaded", function () {
-  gsap.registerPlugin(ScrollTrigger);
+  window.addEventListener("DOMContentLoaded", function () {
+    gsap.registerPlugin(ScrollTrigger);
 
-  const elements = [
-    ".anim-first",
-    ".anim-second",
-    ".anim-third",
-    ".anim-fourth",
-  ];
+    const elements = [
+      ".anim-first",
+      ".anim-second",
+      ".anim-third",
+      ".anim-fourth",
+    ];
 
-  elements.forEach((element, index) => {
-    gsap.to(element, {
-      opacity: 1,
-      duration: 1,
-      scrollTrigger: {
-        trigger: element,
-        start: "top 80%",
-        end: "bottom 50%",
-        toggleActions: "play none none reverse",
-      },
-      delay: index * 1,
+    elements.forEach((element, index) => {
+      gsap.to(element, {
+        opacity: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          end: "bottom 50%",
+          toggleActions: "play none none reverse",
+        },
+        delay: index * 1,
+      });
     });
   });
-});
+}
+
+if (document.querySelector(".js-animation")){
+  const pageAnimation = document.querySelectorAll(".js-animation");
+
+  for (let i = 0; i < pageAnimation.length; i++) {
+      pageAnimation[i].addEventListener("click", function(e){
+      
+          e.preventDefault(); //désactiver le href du lien
+      
+          let newLocation = this.href;
+      
+          document.body.classList.add("page-animation");
+          document.body.addEventListener("animationend", function(){
+              window.location = newLocation;
+          });
+      });   
+  }
 }

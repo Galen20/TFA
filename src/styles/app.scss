@@ -1306,7 +1306,16 @@ a:hover {
         } 
     .grid{
       column-gap: 50px;
-    }       
+    }  
+    .dgrid-startdalto {
+      grid-column-start: 2;
+      grid-column-end: 5;
+  }
+    .dgrid-startmod01{
+      grid-column-start: 2;
+      grid-column-end: 7;
+      grid-row-start: 1;
+    }     
     .dgrid-startgsap04{
         grid-column-start: 5;
         grid-column-end: 7;
@@ -1327,11 +1336,7 @@ a:hover {
       .logo a {
         font-size: 30px;
       }
-      .dgrid-startmod01{
-        grid-column-start: 2;
-        grid-column-end: 7;
-        grid-row-start: 1;
-      }
+     
       .dgrid-startmod02{
         grid-column-start: 2;
         grid-column-end: 6;
@@ -1345,7 +1350,7 @@ a:hover {
   @media (min-width:1600px){
     .dgrid-startdalto{
         grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-end: 5;
         
     }
     .dgrid-startdalto02{

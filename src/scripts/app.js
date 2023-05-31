@@ -91,7 +91,7 @@ if (document.querySelector(".anim-first")){
   });
 }
 
-if (document.querySelector(".js-animation")){
+if (document.querySelector(".js-animation") && screen.width >= 1400){
   const pageAnimation = document.querySelectorAll(".js-animation");
 
   for (let i = 0; i < pageAnimation.length; i++) {
@@ -106,5 +106,21 @@ if (document.querySelector(".js-animation")){
               window.location = newLocation;
           });
       });   
+  }
+}
+
+var video = document.getElementById("video_background");
+
+if(video){
+  if (screen.width >= 1400){
+  
+    video.addEventListener("canplay", function() {
+      setTimeout(function() {
+        video.play();
+      }, 500);
+    });
+  }
+  else{
+      video.play();
   }
 }

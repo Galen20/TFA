@@ -762,9 +762,24 @@ a:hover {
     }
   }
 
-  
-
 }
+
+@media (min-width: 500px){
+  .grid{
+    padding: 100px;
+  }
+  .grid--page{
+    padding: 100px;
+  }
+
+  img{
+    width:400px;
+  }
+  .imgapp{
+    width: 203px;
+  }
+}
+
 @media all and (max-width: 991px) {
   .nav-links {
     position: fixed;
@@ -827,7 +842,7 @@ a:hover {
         row-gap: 50px;
         margin:0 auto;
         margin-top:100px;
-
+        padding: 0px;
         &.grid--bg{  
              padding-top: 100px;
              padding-bottom: 100px;
@@ -1162,7 +1177,7 @@ a:hover {
         width: 90%;
         margin-top: 200px;
         margin-bottom: 200px;
-
+        padding: 0px;
          
       }
       .grid--gap{
@@ -1288,12 +1303,16 @@ a:hover {
         }
         img.no-scale:hover {
           transform: none;
-        }    
+        } 
+    .grid{
+      column-gap: 50px;
+    }       
     .dgrid-startgsap04{
         grid-column-start: 5;
         grid-column-end: 7;
         grid-row-start: 3;
-      }    
+      } 
+      
   }
   @media (min-width:1500px){
     .nav-links {
@@ -1318,11 +1337,15 @@ a:hover {
         grid-column-end: 6;
         grid-row-start: 1;
       }
+      .dgrid-startadn02{
+        grid-column-end: 4;
+       
+      }     
   }
   @media (min-width:1600px){
     .dgrid-startdalto{
         grid-column-start: 2;
-        grid-column-end: 5;
+        grid-column-end: 4;
         
     }
     .dgrid-startdalto02{

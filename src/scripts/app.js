@@ -109,8 +109,9 @@ if (document.querySelector(".js-animation") && screen.width >= 1400){
   }
 }
 
-var video = document.getElementById("video_background");
+if (document.getElementById("video_background")){
 
+var video = document.getElementById("video_background");
 
 if (window.matchMedia("(min-width: 1400px)").matches) {
   
@@ -121,19 +122,7 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 }else{
     video.play();
 }
+}
 
 // https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
-// if(video){
-//   if (screen.width >= 1400){
-  
-//     video.addEventListener("canplay", function() {
-//       setTimeout(function() {
-//         video.play();
-//       }, 500);
-//     });
-//   }
-//   else{
-//       video.play();
-//   }
-// }

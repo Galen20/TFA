@@ -165,17 +165,18 @@ body{
     position: relative;
     display: block;
     padding: 1em 3em 1em 1em;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: white;
     box-shadow: inset  0 0 0.1em white;
-    width: 130px;
+    width: 200px;
     margin-bottom: 50px;
     margin-top: 50px;
 }
 .next:hover{
     background-color: #73AAF1;
+    color: #000;
 }
   .next:after, .next:before {
     content: "";
@@ -203,10 +204,11 @@ body{
  }
   .next:hover:before {
     transform: translate(0.5em, -0.5em) rotate(45deg);
+    box-shadow: inset -0.2em 0.2em 0 0 #000;
  }
   .next:hover:after {
     transform: translate(0.5em, -0.1em);
-    
+    background: #000;
  }
 
  footer{
@@ -887,19 +889,19 @@ a:hover {
         grid-column-start: 4;
         grid-column-end: 7;
         
-        grid-row-start: 3;
+        grid-row-start: 2;
     }
     .dgrid-startint03{
         grid-column-start: 4;
         grid-column-end: 7;
         
-        grid-row-start: 4;
+        grid-row-start: 3;
     }
     .dgrid-startint04{
         grid-column-start: 2;
         grid-column-end: 4;
         
-        grid-row-start: 3;
+        grid-row-start: 2;
     }
     // Section hypo
 
@@ -1173,6 +1175,12 @@ a:hover {
     .imglp{
         width: 100%;
       }
+      .next {
+        font-size: 20px;
+        width: 230px;
+        
+    }
+
       .grid--page{
         width: 90%;
         margin-top: 200px;

@@ -1261,31 +1261,7 @@ a:hover {
       
   // }
 
-//anim title
-.hellothere {
-  display: block;
-  overflow: hidden;
-}
-.hellothere span{
-  display: inline-block;
-  transform: translateY(100%) rotate(0deg);
-  animation: slideUp 3s .2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
- 
-}
-.hellothere:nth-child(2) span {
-  animation-delay: .5s;
-}
-.hellothere:nth-child(3) span {
-  animation-delay: .8s;
-}
 
-
-@keyframes slideUp {
-  from{}
-  to {
-    transform: translateY(0) rotate(0deg);
-  }
-}
 
 
     .nav-links {
@@ -1432,6 +1408,32 @@ a:hover {
         height: 320px;
       }
     }
+
+    //anim title
+.hellothere {
+  display: block;
+  overflow: hidden;
+}
+.hellothere span{
+  display: inline-block;
+  transform: translateY(100%) rotate(0deg);
+  animation: slideUp 3s .2s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+ 
+}
+.hellothere:nth-child(2) span {
+  animation-delay: .5s;
+}
+.hellothere:nth-child(3) span {
+  animation-delay: .8s;
+}
+
+
+@keyframes slideUp {
+  from{}
+  to {
+    transform: translateY(0) rotate(0deg);
+  }
+}
   }
 
   @media (min-width:2000px){

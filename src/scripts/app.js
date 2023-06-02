@@ -1,4 +1,5 @@
 'use strict';
+
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -128,8 +129,6 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 }
 
 
-
-// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 if (window.matchMedia("(min-width: 1800px)").matches) {
 
   if (document.querySelector(".hellothere")){

@@ -539,11 +539,7 @@ a:hover {
       transform: none;
     }
   }
-  @media(max-width:390px)
-  {
-    height: 400px !important;
-    
-  }
+  
   .swiper-wrapper {
     align-items: center;
   }
@@ -554,17 +550,22 @@ a:hover {
     border: 1px solid #fff;
     transition: 0.2s;
     
-    @media(max-width:390px){
-      height: 300px;
-      width: 200px !important;
-
+    @media(max-width:1400px){
+      width:400px !important; ;
     }
-    &.active {
-      height: 600px !important;
-      width: 440px;
-      @media(max-width:390px){
-        height: 450px;
-        width: 100px !important;
+   
+    @media(min-width:2300px){
+      width: 500px !important;
+    }
+    @media(min-width:1400px){
+      &.active {
+        height: 600px !important;
+        width: 440px;
+       
+    }
+    
+      @media(min-width:2300px){
+        width: 500px !important;
       }
     }
     img{
@@ -580,7 +581,7 @@ a:hover {
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.65;
-    transition: 0.2s;
+    transition: 0.20s;
     &:hover {
       opacity: 1;
     }
@@ -616,7 +617,9 @@ a:hover {
       }
     }
   }
+  
 }
+
 //to be continued scroll 
 .cycle{
   white-space: nowrap;

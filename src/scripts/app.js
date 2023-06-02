@@ -1,4 +1,7 @@
 'use strict';
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const navSlide = () => {
     const burgerm = document.querySelector('.burgerm');
@@ -66,7 +69,7 @@ if (document.querySelector(".swiper")){
 
 if (document.querySelector(".anim-first")){
     window.addEventListener("DOMContentLoaded", function () {
-    gsap.registerPlugin(ScrollTrigger);
+   
 
     const elements = [
       ".anim-first",
@@ -124,5 +127,30 @@ if (window.matchMedia("(min-width: 1400px)").matches) {
 }
 }
 
-// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
 
+
+// https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+if (window.matchMedia("(min-width: 1800px)").matches) {
+
+  if (document.querySelector(".hellothere")){
+    
+
+   const elements = document.querySelectorAll(".hellothere")
+
+    for (let i = 0; i < elements.length; i++) {
+      
+      gsap.to(elements[i],{
+        duration: 1.2,
+        translateY: 0,
+        rotateZ: 0,
+        ease: "power2.out",
+        scrollTrigger:{
+          trigger:elements[i],
+          start:"top 80%",
+          toggleActions: "play none none none"
+        }
+      })
+      
+    }
+  }
+}

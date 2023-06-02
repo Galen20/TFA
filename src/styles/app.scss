@@ -1561,3 +1561,18 @@ a:hover {
         
       }
   }
+  
+  @media (min-width:2300px){
+    .dgrid-startsew06 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 6;
+  }
+  .messagesender {
+   
+    margin-left: 120px;
+    margin-right: 120px;
+    
+    
+}
+  }

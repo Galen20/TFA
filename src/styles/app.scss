@@ -69,6 +69,12 @@ body{
         margin: 0;
         color: #73AAF1;
       }
+      .lph2ui{
+        font-family: "larken";  
+        font-weight:400;
+        font-size: 32px;
+        color: #ffffff;
+      }
       .pgh2 {
         font-family: "larken";  
         font-weight:400;
@@ -77,12 +83,21 @@ body{
         margin: 0;
         color: #73AAF1;
       }
+      .pgh2ui{
+        font-size: 28px;
+        color: #ffffff;
+      }
   
     .paragrande {
       
       font-size: 26px;
       line-height: 36px;
       margin: 20px 20px 40px 20px;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .paragrandeui{
+      font-size: 26px;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
@@ -275,6 +290,10 @@ footer .extra li a:hover{
   fill: white;
 }
 
+.footerpui{
+  font-size: 16px;
+}
+
 // Start of normal pages
 
 .logo {
@@ -439,6 +458,74 @@ a:hover {
     margin: 30px;
 }
 
+// Ui kit
+
+.color-square {
+  width: 50px;
+  height: 50px;
+  padding: 0px 5px;
+  margin-top: 5px;
+  margin-right:20px;
+  border: 1px solid white;
+  
+}
+.color-squares-block {
+  padding: 0px 20px 20px 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.one-color {
+  background-color:#0E1014
+}
+
+.two-color {
+  background-color:#22283F
+}
+
+.three-color {
+  background-color:#2E3441
+}
+.four-color{
+  background-color:#73AAF1
+}
+.five-color{
+  background-color:#D1E3EB
+}
+.six-color{
+  background-color:#D6DADC
+}
+.seven-color{
+  background-color:#fff
+}
+.eight-color{
+  background-color: black
+}
+
+.lph1deskui{
+  font-size: 93px;
+}
+.paragrandedeskui{
+  font-size: 56px;
+}
+.lph2deskui{
+  font-size: 70px;
+}
+.paradeskui{
+  font-size: 31px;
+}
+.pdeskui{
+  font-size: 20px;
+}
+.bigpdeskui{
+  font-size: 24px;
+}
+.Figcaptionuikit{
+  font-size: 15px;
+}
+.pgh2deskui{
+  font-size: 50px;
+}
 //swiper
 
 .swiper {
@@ -1190,7 +1277,15 @@ a:hover {
       }
       .grid--gap{
         row-gap: 100px;
-      }  
+      } 
+      .color-squares-block {
+        flex-direction: row;
+    }
+    .color-square {
+        width: 100px;
+        height: 100px;
+        
+    } 
   }
   @media ( min-width: 1200px){
     img{ 

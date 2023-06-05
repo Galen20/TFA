@@ -1042,6 +1042,12 @@ a:hover {
         
         grid-row-start: 2;
     }
+    .dgrid-startconcl05 {
+      grid-column-start: 5;
+      grid-column-end: 8;
+      
+      grid-row-start: 3;
+  }
     .dgrid-startmod02{
       grid-column-start: 2;
       grid-column-end: 4;
@@ -1493,7 +1499,7 @@ a:hover {
     }
     .dgrid-startdalto02{
         grid-column-start: 4;
-        grid-column-end: 6;
+        grid-column-end: 7;
         
         grid-row-start: 2;
     }
@@ -1559,6 +1565,7 @@ a:hover {
   }
   
   @media (min-width:2300px){
+   
     .dgrid-startsew06 {
       grid-column-start: 2;
       grid-column-end: 5;

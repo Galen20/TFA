@@ -141,6 +141,10 @@ body{
       
       
   }
+  .space{
+    margin-bottom: 100px;
+  }
+
   .gridv > *{
     grid-column: 1/-1;
   
@@ -1234,6 +1238,11 @@ a:hover {
       grid-column-start: 1;
       grid-column-end: 8;
       grid-row-start: 5;
+    }
+    .dgrid-startadn06{
+      grid-column-start: 2;
+      grid-column-end: 7;
+      
     }
     .dgrid-startcred01{
       grid-column-start: 2;

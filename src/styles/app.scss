@@ -857,7 +857,7 @@ a:hover {
         background-image: url("image/colorwsf.png") ;
     }
   }
-
+  
 }
 
 @media (min-width: 500px){
@@ -876,6 +876,7 @@ a:hover {
   }
 }
 
+
 @media all and (max-width: 991px) {
   .nav-links {
     position: fixed;
@@ -886,7 +887,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 80px;
+    padding-top: 50px;
     width: 100%;
     transform: translateX(100%);
     transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);

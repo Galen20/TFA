@@ -253,7 +253,7 @@ footer .media_logo, footer .extra, footer p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1px 1px;
+    
 }
 footer .media_logo li, footer .extra li{
     list-style: none;
@@ -724,7 +724,7 @@ a:hover {
   background-color: #D1E3EB;
   border-radius: 5%;
   //width: 309px;
-  height: 130px;
+  height: 160px;
   img {
     width: 256px;
     height: 138px;
@@ -754,7 +754,7 @@ a:hover {
   border-radius: 45px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 150px;
+  margin-top: 100px;
   height: 45px;
   //margin-left: 110.5px;
   display: flex;
@@ -1335,6 +1335,10 @@ a:hover {
         
       }
     }
+    footer .media_logo, footer .extra, footer p{
+     
+      margin: 2px 2px;
+  }
   }
   @media ( min-width: 1200px){
     img{ 

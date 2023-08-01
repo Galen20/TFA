@@ -153,3 +153,23 @@ if (window.matchMedia("(min-width: 1800px)").matches) {
     }
   }
 }
+
+
+
+const header = document.querySelector('header.sticky');
+
+function toggleNavVisibility() {
+  const navbar = header.querySelector('nav');
+  const headerRect = header.getBoundingClientRect();
+
+  if (headerRect.top === 0) {
+    navbar.style.display = 'flex';
+    document.body.classList.add('no-scroll'); 
+  } else {
+    navbar.style.display = 'none';
+    document.body.classList.remove('no-scroll'); 
+  }
+}
+
+toggleNavVisibility();
+window.addEventListener('scroll', toggleNavVisibility);

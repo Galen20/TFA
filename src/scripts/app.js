@@ -158,8 +158,14 @@ if (window.matchMedia("(min-width: 1800px)").matches) {
 
 const header = document.querySelector('header.sticky');
 
+if ( header){
+  var navbar = header.querySelector('nav');
+}
+
+
 function toggleNavVisibility() {
-  const navbar = header.querySelector('nav');
+  
+  
   const headerRect = header.getBoundingClientRect();
 
   if (headerRect.top === 0) {
@@ -170,6 +176,11 @@ function toggleNavVisibility() {
     document.body.classList.remove('no-scroll'); 
   }
 }
+  
 
-toggleNavVisibility();
-window.addEventListener('scroll', toggleNavVisibility);
+if (navbar) {
+
+  toggleNavVisibility();
+  window.addEventListener('scroll', toggleNavVisibility);
+  
+}

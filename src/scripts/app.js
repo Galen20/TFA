@@ -54,7 +54,7 @@ if (document.querySelector(".swiper")){
     slideActiveClass: "active",
     navigation: {
       nextEl: ".nextsl",
-      prevEl: ".prev"
+      prevEl: ".prevsl"
     },
     pagination: {
       el: ".pagination",

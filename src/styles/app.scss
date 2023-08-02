@@ -1,4 +1,4 @@
-
+@import 'components/nav';
 
 *{
     padding: 0;
@@ -69,9 +69,6 @@ body{
         color: #73AAF1;
       }
       .lph2ui{
-        font-family: "larken";  
-        font-weight:400;
-        font-size: 32px;
         color: #ffffff;
       }
       .pgh2 {
@@ -83,7 +80,6 @@ body{
         color: #73AAF1;
       }
       .pgh2ui{
-        font-size: 28px;
         color: #ffffff;
       }
   
@@ -96,8 +92,7 @@ body{
     }
 
     .paragrandeui{
-      font-size: 26px;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: 0;
     }
 
     .lpp{
@@ -191,43 +186,44 @@ body{
     width: 200px;
     margin-bottom: 50px;
     margin-top: 50px;
+
+    &:hover{
+      background-color: #73AAF1;
+      color: #000;
+
+      &:before{
+        transform: translate(0.5em, -0.5em) rotate(45deg);
+        box-shadow: inset -0.2em 0.2em 0 0 #000;
+      }
+
+      &:after {
+        transform: translate(0.5em, -0.1em);
+        background: #000;
+      }
+    }
+    &:after, &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      transition: transform 0.5s ease-in-out;
+      top: 50%;
+      right: 2.5em;
+    }
+    &:before{
+      width: 1em;
+      height: 1em;
+      transform-origin: 50% 50%;
+      transform: translate(0, -0.5em) rotate(45deg);
+      box-shadow: inset -0.2em 0.2em 0 0 white;
+      border-radius: 0 0.15em 0 0;
+    }
+    &:after{
+      width: 2em;
+      height: 0.2em;
+      transform: translate(0, -0.1em);
+      background-color: white;
+    }
 }
-.next:hover{
-    background-color: #73AAF1;
-    color: #000;
-}
-  .next:after, .next:before {
-    content: "";
-    display: block;
-    position: absolute;
-    transition: transform 0.5s ease-in-out;
- }
-  .next:before {
-    top: 50%;
-    right: 2.5em;
-    width: 1em;
-    height: 1em;
-    transform-origin: 50% 50%;
-    transform: translate(0, -0.5em) rotate(45deg);
-    box-shadow: inset -0.2em 0.2em 0 0 white;
-    border-radius: 0 0.15em 0 0;
- }
-  .next:after {
-    top: 50%;
-    right: 2.5em;
-    width: 2em;
-    height: 0.2em;
-    transform: translate(0, -0.1em);
-    background-color: white;
- }
-  .next:hover:before {
-    transform: translate(0.5em, -0.5em) rotate(45deg);
-    box-shadow: inset -0.2em 0.2em 0 0 #000;
- }
-  .next:hover:after {
-    transform: translate(0.5em, -0.1em);
-    background: #000;
- }
 
  footer{
     position: relative;
@@ -588,7 +584,7 @@ a:hover {
       height: 100%;
     }
   }
-  .prev,
+  .prevsl,
   .nextsl {
     cursor: pointer;
     z-index: 100;
@@ -608,7 +604,7 @@ a:hover {
       fill: #fff;
     }
   }
-  .prev {
+  .prevsl {
     left: 25px;
   }
   .nextsl {

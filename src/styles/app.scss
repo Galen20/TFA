@@ -1131,7 +1131,6 @@ a:hover {
       grid-row-start: 7;
     }
     .dgrid-startmod02{
-      grid-column-start: 2;
       grid-column-end: 7;
       grid-row-start: 1;
     }
@@ -1467,9 +1466,7 @@ a:hover {
       }
      
       .dgrid-startmod02{
-        grid-column-start: 2;
         grid-column-end: 6;
-        grid-row-start: 1;
       }
       .dgrid-startadn02{
         grid-column-end: 4;
@@ -1479,7 +1476,7 @@ a:hover {
     }  
     .dgrid-starthypothrow{
       grid-column-start: 4;
-      grid-column-end: 7;
+      
     }  
   }
   @media (min-width:1600px){
@@ -1492,34 +1489,26 @@ a:hover {
         grid-column-start: 4;
         grid-column-end: 7;
         
-        grid-row-start: 2;
     }
     .dgrid-startdalto03{
         grid-column-start: 4;
         grid-column-end: 6;
         
-        grid-row-start: 3;
     }
-    .dgrid-startdalto04{
-        grid-column-start: 2;
-        grid-column-end: 6;
-        
-    }
+   
     
   .dgrid-startconcl01{
-    grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 1;
   }
   .dgrid-startinter02{
     grid-column-start: 4;
     grid-column-end: 7;
-    grid-row-start: 2;
+    
   }
   .dgrid-startinter03{
     grid-column-start: 4;
     grid-column-end: 7;
-    grid-row-start: 4;
+    
   }
 
   .lpp{
@@ -1562,8 +1551,7 @@ a:hover {
    
     .dgrid-startsew06 {
       grid-column-start: 2;
-      grid-column-end: 5;
-      grid-row-start: 6;
+      
   }
   .messagesender {
    

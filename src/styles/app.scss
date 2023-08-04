@@ -1031,7 +1031,7 @@ a:hover {
     // Section concl
     .dgrid-startconcl02 {
         grid-column-start: 2;
-        grid-column-end: 5;
+        grid-column-end: 6;
         
         grid-row-start: 2;
     }
@@ -1068,7 +1068,7 @@ a:hover {
       grid-column-end: 5;
     }
     .dgrid-startintrorow02{
-      grid-column-start: 5;
+      grid-column-start: 4;
       grid-column-end: 8;
     }
     .dgrid-startintro03{
@@ -1097,7 +1097,7 @@ a:hover {
      
     }
     .dgrid-starthypothrow{
-      grid-column-start: 4;
+      grid-column-start: 3;
       grid-column-end: 7;
     }
     .dgrid-starthypoth02{
@@ -1389,9 +1389,6 @@ a:hover {
       
   // }
 
-
-
-
     .nav-links {
       padding: 0 0 0 0;
       font-size: 18px;
@@ -1476,8 +1473,14 @@ a:hover {
       }
       .dgrid-startadn02{
         grid-column-end: 4;
-       
-      }     
+      } 
+      .dgrid-startconcl02 {
+        grid-column-end: 5;  
+    }  
+    .dgrid-starthypothrow{
+      grid-column-start: 4;
+      grid-column-end: 7;
+    }  
   }
   @media (min-width:1600px){
     .dgrid-startdalto{

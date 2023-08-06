@@ -1,0 +1,207 @@
+.logo {
+    color: rgb(226, 226, 226);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 20px;
+    display: flex;
+    width: 160px;
+  }
+  
+  .logo a {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    text-align: center;
+    font-family: "larken";
+    font-size: 15px;
+    font-weight: 900;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    font-family: "titillium-web";
+    
+  }
+  
+  .nav-links {
+    position: absolute;
+    transform: translate(-5%, -5%);
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    display: flex;
+    padding: 0 0 0 0;
+    list-style: none;
+  }
+  .nav-links .text {
+    position: relative;
+    color: #fff;
+    font-weight:500;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+    text-decoration: none;
+   
+  }
+  .nav-links .text::before, .nav-links .text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #73AAF1;
+    transform-origin: right;
+    transition: transform 400ms ease;
+    z-index: -1;
+    transform: scaleX(0);
+  }
+  .nav-links .text:hover::before, .nav-links .text:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  .nav-links .text::after {
+    z-index: -2;
+    filter: blur(30px);
+  }
+  .nav-links .text__active {
+      text-decoration: none; 
+      border-bottom: 1px solid white; 
+  }
+  .nav-links .text__active:hover {
+    color: #fff;
+  }
+  
+  a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 400ms ease;
+  
+    &.linkws{
+      font-size: 20px;
+      text-decoration: none;
+      color:#73AAF1;
+    }
+    &.linkws:hover{
+      color: white;
+    }
+  }
+  
+  a:hover {
+    color: #73AAF1;
+  }
+  
+  .scroll {
+    overflow-y: hidden;
+  }
+  
+  .burgerm {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    max-width: 35px;
+  }
+  .sticky{
+    position: sticky;
+    top:0;
+    z-index: 999;
+    background-color: #0E1014;
+    
+  }
+  .sticky nav {
+    min-height: 8vh;
+  }
+  // .sticky nav .logo a{
+  //   display: none;
+  // }
+  
+
+  @media all and (max-width: 991px){
+    .nav-links {
+        position: fixed;
+        right: 0;
+        height: 98vh;
+        top: 68px;
+        background-color: #2E3441;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        padding-top: 30px;
+        width: 100%;
+        transform: translateX(100%);
+        transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 21;
+      }
+      .nav-links li {
+        opacity: 0;
+      }
+      .nav-active {
+        transform: translateX(0%);
+      }
+      @keyframes navLinkFade {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+      .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+      }
+      .toggle .line2 {
+        opacity: 0;
+      }
+      .toggle .line3 {
+        transform: rotate(45deg) translate(-6px, -6px);
+      }
+  }
+
+  @media (min-width:992px){
+    a{
+        &.linkws{
+          font-size: 24px;
+        }
+      }
+      .burgerm {
+        display: none;
+      }
+  }
+
+  @media (min-width: 1400px){
+    .nav-links {
+        padding: 0 0 0 0;
+        font-size: 18px;
+        letter-spacing: 2px;
+      }
+      .nav-links .text {
+        padding: 10px 15px;
+      }
+  }
+
+  @media (min-width:1500px){
+    .nav-links {
+        letter-spacing: 3px;
+      }
+      .nav-links .text {
+        padding: 15px 20px;
+      }
+  }

@@ -144,16 +144,19 @@
         grid-row-start: 4;
     }
     // Section concl
+    .dgrid-startconcl00{
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+    }
     .dgrid-startconcl02 {
         grid-column-start: 2;
         grid-column-end: 6;
-        
         grid-row-start: 2;
     }
     .dgrid-startconcl03 {
         grid-column-start: 2;
         grid-column-end: 7;
-        
         grid-row-start: 3;
     }
     .dgrid-startconclrow{
@@ -415,8 +418,7 @@
         grid-column-end: 6;
         
     }
-   
-    
+     
   .dgrid-startconcl01{
     grid-column-end: 5;
   }

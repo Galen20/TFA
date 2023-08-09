@@ -204,4 +204,12 @@
       .nav-links .text {
         padding: 15px 20px;
       }
+      .logo a {
+        font-size: 18px;
+      }  
+  }
+  @media (min-width:2000px){
+    .logo a {
+      font-size: 20px;
+    }  
   }

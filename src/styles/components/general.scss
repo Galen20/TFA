@@ -180,73 +180,7 @@ body{
     }
 }
 
- footer{
-    position: relative;
-    width: 100%;
-    background: #2E3441;
-    min-height: 25px;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: -50px;
-
-}
-
-.footer__small{
-  margin-top: 50px;
-}
-
-footer .media_logo, footer .extra, footer p{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-footer .media_logo li, footer .extra li{
-    list-style: none;
-}
-footer .media_logo li a{
-    font-size: 2rem;
-    color: white;
-    margin: 0 20px;
-    display: inline-block;
-    transition: 0.5s;
-    
-}
-footer .media_logo li a:hover{
-    transform: translateY(-10px);
-}
-footer .extra li a{
-    font-size: 1rem;
-    color: white;
-    margin: 0 20px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    
-}
-footer .extra li a:hover{
-    opacity: 1;
-    color: #73AAF1;
-}
- footer p {
-    color: white;
-    text-align: center;
-    font-size: 0.8em ;
-    padding-top: 10px;
-}
-.imgdwt{
-  width: 50px;
-  height: 30px;
-  fill: white;
-}
-
-.footerpui{
-  font-size: 16px;
-}
+ 
 
 // Start of normal pages
 
@@ -704,7 +638,7 @@ footer .extra li a:hover{
   @media (min-width:992px){
 
     .text-container {
-        bottom: 600px;
+        bottom: 620px;
         
       }
       .lph1{
@@ -761,10 +695,7 @@ footer .extra li a:hover{
         
       }
     }
-    footer .media_logo, footer .extra, footer p{
-     
-      margin: 2px 2px;
-  }
+   
   }
   @media ( min-width: 1200px){
     img{ 
@@ -909,13 +840,6 @@ footer .extra li a:hover{
 }
   }
 
-  @media (min-width:2000px){
-    .text-container {
-        bottom: 800px;
-        
-      }
-  }
-  
   @media (min-width:2300px){
   .messagesender {
    
@@ -924,5 +848,9 @@ footer .extra li a:hover{
 }
 .message2 {
   height: 90px;
+}
+.text-container {
+  bottom: 800px;
+  
 }
   }
